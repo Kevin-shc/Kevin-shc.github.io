@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>shc&#39;s blog</title>
+  
+  
+  <link href="/atom.xml" rel="self"/>
+  
+  <link href="http://kevin-shc.github.io/"/>
+  <updated>2020-02-22T17:00:40.605Z</updated>
+  <id>http://kevin-shc.github.io/</id>
+  
+  <author>
+    <name>shc</name>
+    
+  </author>
+  
+  <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>404</title>
+    <link href="http://kevin-shc.github.io/2020/02/23/404/"/>
+    <id>http://kevin-shc.github.io/2020/02/23/404/</id>
+    <published>2020-02-22T17:00:21.000Z</published>
+    <updated>2020-02-22T17:00:40.605Z</updated>
+    
+    <summary type="html">
+    
+      你来到了没有知识的荒原 :(
+    
+    </summary>
+    
+    
+    
+  </entry>
+  
+  <entry>
+    <title>first-post</title>
+    <link href="http://kevin-shc.github.io/2020/02/22/first-post/"/>
+    <id>http://kevin-shc.github.io/2020/02/22/first-post/</id>
+    <published>2020-02-22T02:43:23.000Z</published>
+    <updated>2020-02-22T16:26:54.978Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;p&gt;Welcome to &lt;a href=&quot;https://Kevin-shc.github.io&quot;&gt;my blog&lt;/a&gt; ! This is my first try.&lt;br&gt;Thanks for the help when I build this blog. Here
+        
+      
+    
+    </summary>
+    
+    
+    
+  </entry>
+  
+</feed>
