@@ -4,9 +4,12 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="first-post, 石昊琛的博客">
-    <meta name="description" content="Welcome to my blog ! This is my first try.Thanks for the help when I build this blog. Here is the link .
-$ It&#39;s just a f">
+    <meta name="keywords" content="C++中字符串连接时超出内存限制, 石昊琛的博客">
+    <meta name="description" content="今天在力扣做题的时候使用字符串链接遇到了一些小问题：
+ans = ans + a;
+string num_in = to_string(num);
+ans = ans + num_in;
+这样写的时候会报错超出内存限制，改成下面的代码后就可">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <meta name="renderer" content="webkit|ie-stand|ie-comp">
@@ -14,7 +17,7 @@ $ It&#39;s just a f">
     <meta name="format-detection" content="telephone=no">
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-    <title>first-post | 石昊琛的博客</title>
+    <title>C++中字符串连接时超出内存限制 | 石昊琛的博客</title>
     <link rel="icon" type="image/png" href="/favicon.png">
 
     <link rel="stylesheet" type="text/css" href="/libs/awesome/css/all.css">
@@ -280,12 +283,12 @@ $ It&#39;s just a f">
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/3.jpg')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/4.jpg')">
     <div class="container" style="right: 0px;left: 0px;">
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
-                    <h1 class="description center-align post-title">first-post</h1>
+                    <h1 class="description center-align post-title">C++中字符串连接时超出内存限制</h1>
                 </div>
             </div>
         </div>
@@ -414,7 +417,7 @@ $ It&#39;s just a f">
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-minus fa-fw"></i>发布日期:&nbsp;&nbsp;
-                    2020-02-22
+                    2020-03-16
                 </div>
                 
 
@@ -431,8 +434,15 @@ $ It&#39;s just a f">
         <hr class="clearfix">
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <p>Welcome to <a href="https://Kevin-shc.github.io">my blog</a> ! This is my first try.<br>Thanks for the help when I build this blog. Here is the <a href="https://gist.github.com/btfak/18938572f5df000ebe06fbd1872e4e39" target="_blank" rel="noopener">link</a> .</p>
-<pre class=" language-bash"><code class="language-bash">$ It's just a <span class="token keyword">function</span> try.</code></pre>
+                <p>今天在力扣做题的时候使用字符串链接遇到了一些小问题：</p>
+<pre class="line-numbers language-c++"><code class="language-c++">ans = ans + a;
+string num_in = to_string(num);
+ans = ans + num_in;<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre>
+<p>这样写的时候会报错超出内存限制，改成下面的代码后就可以了</p>
+<pre class="line-numbers language-c++"><code class="language-c++">ans += a;
+string num_in = to_string(num);
+ans += num_in;<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre>
+<p>原因是使用ans = ans + a;语句时，系统会新开辟一个空间用于存放ans + a的结果，ans+a相当于一个匿名变量，之后再把这个结果赋值给ans。当ans本身长度很长时就会导致超出内存限制的结果。<br>ans += a;相当于调用ans.append( )直接在字符串ans末尾添加新的字符串，不会产生匿名变量，因此不会导致超出内存限制的结果。</p>
 <script>
         document.querySelectorAll('.github-emoji')
           .forEach(el => {
@@ -476,7 +486,7 @@ $ It&#39;s just a f">
                     </i>
                 </span>
                 <span class="reprint-info">
-                    <a href="http://Kevin-shc.github.io/first-post/">http://Kevin-shc.github.io/first-post/</a>
+                    <a href="http://Kevin-shc.github.io/c-zhong-zi-fu-chuan-lian-jie-shi-chao-chu-nei-cun-xian-zhi/">http://Kevin-shc.github.io/c-zhong-zi-fu-chuan-lian-jie-shi-chao-chu-nei-cun-xian-zhi/</a>
                 </span>
             </div>
             <div class="reprint__notice">
@@ -552,9 +562,10 @@ $ It&#39;s just a f">
 <article id="prenext-posts" class="prev-next articles">
     <div class="row article-row">
         
-        <div class="article col s12 m6" data-aos="fade-up">
+        <div class="article col s12 m6" data-aos="fade-up" data-aos="fade-up">
             <div class="article-badge left-badge text-color">
-                <i class="fas fa-chevron-left"></i>&nbsp;上一篇</div>
+                <i class="far fa-dot-circle"></i>&nbsp;本篇
+            </div>
             <div class="card">
                 <a href="/c-zhong-zi-fu-chuan-lian-jie-shi-chao-chu-nei-cun-xian-zhi/">
                     <div class="card-image">
@@ -576,9 +587,9 @@ ans = ans + num_in;
                         
                     </div>
                     <div class="publish-info">
-                        <span class="publish-date">
-                            <i class="far fa-clock fa-fw icon-date"></i>2020-03-16
-                        </span>
+                            <span class="publish-date">
+                                <i class="far fa-clock fa-fw icon-date"></i>2020-03-16
+                            </span>
                         <span class="publish-author">
                             
                             <i class="fas fa-user fa-fw"></i>
@@ -587,6 +598,7 @@ ans = ans + num_in;
                         </span>
                     </div>
                 </div>
+
                 
             </div>
         </div>
@@ -594,7 +606,7 @@ ans = ans + num_in;
         
         <div class="article col s12 m6" data-aos="fade-up">
             <div class="article-badge right-badge text-color">
-                本篇&nbsp;<i class="far fa-dot-circle"></i>
+                下一篇&nbsp;<i class="fas fa-chevron-right"></i>
             </div>
             <div class="card">
                 <a href="/first-post/">
@@ -625,7 +637,6 @@ $ It's just a f
                         </span>
                     </div>
                 </div>
-
                 
             </div>
         </div>

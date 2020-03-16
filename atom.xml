@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://kevin-shc.github.io/"/>
-  <updated>2020-02-22T16:26:54.978Z</updated>
+  <updated>2020-03-16T03:49:36.414Z</updated>
   <id>http://kevin-shc.github.io/</id>
   
   <author>
@@ -15,6 +15,31 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>C++中字符串连接时超出内存限制</title>
+    <link href="http://kevin-shc.github.io/c-zhong-zi-fu-chuan-lian-jie-shi-chao-chu-nei-cun-xian-zhi/"/>
+    <id>http://kevin-shc.github.io/c-zhong-zi-fu-chuan-lian-jie-shi-chao-chu-nei-cun-xian-zhi/</id>
+    <published>2020-03-16T03:24:44.000Z</published>
+    <updated>2020-03-16T03:49:36.414Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;p&gt;今天在力扣做题的时候使用字符串链接遇到了一些小问题：&lt;/p&gt;
+&lt;pre class=&quot;line-numbers language-c++&quot;&gt;&lt;code class=&quot;language-c++&quot;&gt;ans = ans + a;
+string num_in =
+        
+      
+    
+    </summary>
+    
+    
+    
+  </entry>
   
   <entry>
     <title>first-post</title>

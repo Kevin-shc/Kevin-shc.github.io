@@ -4,6 +4,19 @@
   
     
     <entry>
+      <title>C++中字符串连接时超出内存限制</title>
+      <link href="/c-zhong-zi-fu-chuan-lian-jie-shi-chao-chu-nei-cun-xian-zhi/"/>
+      <url>/c-zhong-zi-fu-chuan-lian-jie-shi-chao-chu-nei-cun-xian-zhi/</url>
+      
+        <content type="html"><![CDATA[<p>今天在力扣做题的时候使用字符串链接遇到了一些小问题：</p><pre class="line-numbers language-c++"><code class="language-c++">ans = ans + a;string num_in = to_string(num);ans = ans + num_in;<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre><p>这样写的时候会报错超出内存限制，改成下面的代码后就可以了</p><pre class="line-numbers language-c++"><code class="language-c++">ans += a;string num_in = to_string(num);ans += num_in;<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre><p>原因是使用ans = ans + a;语句时，系统会新开辟一个空间用于存放ans + a的结果，ans+a相当于一个匿名变量，之后再把这个结果赋值给ans。当ans本身长度很长时就会导致超出内存限制的结果。<br>ans += a;相当于调用ans.append( )直接在字符串ans末尾添加新的字符串，不会产生匿名变量，因此不会导致超出内存限制的结果。</p><script>        document.querySelectorAll('.github-emoji')          .forEach(el => {            if (!el.dataset.src) { return; }            const img = document.createElement('img');            img.style = 'display:none !important;';            img.src = el.dataset.src;            img.addEventListener('error', () => {              img.remove();              el.style.color = 'inherit';              el.style.backgroundImage = 'none';              el.style.background = 'none';            });            img.addEventListener('load', () => {              img.remove();            });            document.body.appendChild(img);          });      </script>]]></content>
+      
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>first-post</title>
       <link href="/first-post/"/>
       <url>/first-post/</url>
