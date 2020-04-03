@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://kevin-shc.github.io/"/>
-  <updated>2020-03-16T03:49:36.414Z</updated>
+  <updated>2020-04-03T15:36:54.407Z</updated>
   <id>http://kevin-shc.github.io/</id>
   
   <author>
@@ -15,6 +15,29 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>windows下安装Qjson</title>
+    <link href="http://kevin-shc.github.io/windows-xia-an-zhuang-qjson/"/>
+    <id>http://kevin-shc.github.io/windows-xia-an-zhuang-qjson/</id>
+    <published>2020-04-03T13:44:32.000Z</published>
+    <updated>2020-04-03T15:36:54.407Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;p&gt;本文是我在安装Qjson的过程中遇到的问题的总结，以及完整的Qjson的安装教程。&lt;br&gt;Qjson的编译需要使用cmake，关于cmake的安装可以参照&lt;br&gt;&lt;a
+        
+      
+    
+    </summary>
+    
+    
+    
+  </entry>
   
   <entry>
     <title>C++中字符串连接时超出内存限制</title>
